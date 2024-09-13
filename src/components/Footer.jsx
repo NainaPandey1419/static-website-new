@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container, Grid, Typography, TextField, Button, InputAdornment } from '@mui/material';
+import { Box, Container, Grid, Typography, TextField, Button, InputAdornment, Link } from '@mui/material';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -9,7 +9,7 @@ import { footerStyles } from './FooterStyles';
 
 const Footer = () => {
   return (
-    <Box sx={footerStyles.footerBox}>
+    <Box sx={footerStyles.footerBox} style={{height:'380px'}}>
       <Container sx={footerStyles.container}>
         <Grid container spacing={4}>
           <Grid item xs={12} md={3}>
@@ -20,10 +20,18 @@ const Footer = () => {
               DASHTINY travel fund is a good way to track your travel money.
             </Typography>
             <Box sx={{ display: 'flex', gap: 2 }}>
-              <InstagramIcon sx={footerStyles.socialIcon} />
-              <LinkedInIcon sx={footerStyles.socialIcon} />
-              <FacebookIcon sx={footerStyles.socialIcon} />
-              <TwitterIcon sx={footerStyles.socialIcon} />
+              <Link href="https://www.instagram.com/dashtiny.dt/" target="_blank" rel="noopener" sx={{ color: 'inherit' }}>
+                <InstagramIcon sx={footerStyles.socialIcon} />
+              </Link>
+              <Link href="https://www.linkedin.com/company/dashtiny/" target="_blank" rel="noopener" sx={{ color: 'inherit' }}>
+                <LinkedInIcon sx={footerStyles.socialIcon} />
+              </Link>
+              <Link href="https://www.facebook.com/yourdashtiny" target="_blank" rel="noopener" sx={{ color: 'inherit' }}>
+                <FacebookIcon sx={footerStyles.socialIcon} />
+              </Link>
+              <Link href="https://twitter.com/yourdashtiny" target="_blank" rel="noopener" sx={{ color: 'inherit' }}>
+                <TwitterIcon sx={footerStyles.socialIcon} />
+              </Link>
             </Box>
           </Grid>
           
@@ -43,9 +51,10 @@ const Footer = () => {
             <Typography variant="h6" sx={footerStyles.sectionTitle}>
               Contact Us
             </Typography>
-            <Typography variant="body1" sx={{ mb: 1 }}>Bengaluru, India</Typography>
-            <Typography variant="body1" sx={{ mb: 1 }}>99775 16923</Typography>
-            <Typography variant="body1">hr@dashtiny.com</Typography>
+            <Typography variant="body1" sx={{ mb: 2 }}>140, Kashmiri Colony, Niranjanpur, Dehradun, Uttarakhand-248001, India</Typography>
+            <Typography variant="body1" sx={{ mb: 1 }}>82913 95670</Typography>
+            <Typography variant="body1" sx={{ mt: 1}}>info@dashtiny.com</Typography>
+            <Typography variant="body1" sx={{ mt: 1}}>operations@dashtiny.com</Typography>
           </Grid>
           
           <Grid item xs={12} md={3}>
