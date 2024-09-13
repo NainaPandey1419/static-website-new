@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import {
   Box,
@@ -8,7 +8,6 @@ import {
   Card,
   CardContent,
 } from "@mui/material";
-import FlipIcon from '@mui/icons-material/Flip';
 import "../App.css";
 import { featureStyles } from "./FeaturesStyles";
 
